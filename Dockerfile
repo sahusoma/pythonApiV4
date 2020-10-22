@@ -21,6 +21,7 @@ COPY ["database/*", "/app/"]
 COPY ["resources/*", "/app/"]
 COPY ["service/*", "/app/"]
 COPY ["test/*", "/app/"]
+COPY ["config.properties", "/app"]
 COPY ["app.py", "/app"]
 
 # Exposing an internal port
