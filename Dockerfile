@@ -17,14 +17,8 @@ COPY /requirements.txt /app
 
 RUN pip3 install -r requirements.txt
 
-COPY ["./database/", "/app/"]
-COPY ["./resources/", "/app/"]
-COPY ["./service/", "/app/"]
-COPY ["./test/", "/app/"]
-COPY ["app.py", "/app/"]
-COPY ["config.properties", "/app/"]
+COPY [".", "/app/"]
 
-CMD ["ls"]
 # Exposing an internal port
 EXPOSE 5001
 
