@@ -1,6 +1,5 @@
 import configparser as configparser
 from flask import Flask, Response, json
-from flask_bcrypt import Bcrypt
 from flask_jwt_extended import JWTManager
 from database.db import initialize_db
 from flask_restful import Api
