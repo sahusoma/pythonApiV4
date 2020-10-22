@@ -3,8 +3,10 @@ FROM alpine
 
 
 # # Step 2 tell what you want to do
+RUN apk update && apk add gcc libc-dev make git libffi-dev openssl-dev python3-dev libxml2-dev libxslt-dev 
 RUN apk add py3-pip
 RUN apk add --no-cache python3-dev && pip3 install --upgrade pip && pip3 install wheel
+
 
 # # Step 3 Configure a software
 # # Defining working directory
