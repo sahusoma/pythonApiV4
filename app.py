@@ -10,7 +10,6 @@ config = configparser.ConfigParser()
 config.read('config.properties')
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = config.get(section='auth_config', option='JWT_SECRET_KEY')
 
 api = Api(app)
 
