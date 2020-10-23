@@ -17,9 +17,7 @@ COPY /requirements.txt /app
 
 RUN pip3 install -r requirements.txt
 
-COPY ["MongoAPI.py", "/app"]
-
-COPY ["App.py", "/app"]
+COPY [".", "/app"]
 
 # Exposing an internal port
 EXPOSE 5001
