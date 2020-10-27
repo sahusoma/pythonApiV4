@@ -8,13 +8,12 @@ class Client():
         self.doc_id = doc_id
         self.preexistence = []
 
-        ******* adds preexitence cliente
-        ***
+        ******* adds preexitence cliente   ***
+        
     def add_preexistence(self, nPreexistence):
         self.preexistence.append(nPreexistence)
         return len(self.preexistence) - 1
-        ******* adds preexitence cliente
-        ***
+        ******* adds preexitence cliente      ***
 
     def get_preexistence(self, pIndex):
         if pIndex >= len(self.preexistence):
